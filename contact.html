@@ -3,52 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - KL University</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <!-- Loader -->
-    <div id="loader">
-        <div class="wave-container">
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
+
+<div class="contact-container">
+    <div class="info-boxes">
+        <div class="box">
+            <i class="icon location"></i>
+            <h3>Our Mail</h3>
+            <p>2400030076@kluniversity.in<br><br>Click Me To Mail</p>
         </div>
-        <div class="brand-name">
-            <div class="typing-text">Fitness Flow</div>
-            <div class="cursor"></div>
+        <div class="box">
+            <i class="icon phone"></i>
+            <h3>Address</h3>
+            <p>KL University<br>Vizayawada Guntur</p>
+        </div>
+        <div class="box">
+            <i class="icon fax"></i>
+            <h3>Social Media</h3>
+            <p>ekkadaa pettali linklu</p>
+        </div>
+        <div class="box">
+            <i class="icon email"></i>
+            <h3>Continue Reading Blogs</h3>
+            <button><a href="aboutus.html"></a>Blogs</button>
         </div>
     </div>
 
-    <!-- Main Content -->
-    <div id="main-content">
-        <section class="contact-section">
-            <div class="container">
-                <h1>Contact Us</h1>
-                <p>We'd love to hear from you! Get in touch with us through the following details:</p>
-                <div class="contact-info">
-                    <div class="info-item">
-                        <h3>Email</h3>
-                        <p><a href="mailto:2400030076@kluniversity.in">2400030076@kluniversity.in</a></p>
-                    </div>
-                    <div class="info-item">
-                        <h3>Address</h3>
-                        <p>Green Fields, Vaddeswaram,<br> Vijayawada, Guntur - 522302</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Enter your Name" required>
+            <input type="email" name="email" placeholder="Enter a valid email address" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </div>
+</div>
 
-    <script>
-        // JavaScript to hide loader and show main content
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                document.getElementById('loader').style.opacity = '0';
-                document.getElementById('main-content').style.opacity = '1';
-            }, 1200); // Time for loader to be visible before fading out
-        });
-    </script>
 </body>
 </html>
