@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Grid</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">FITNESS FLOW</div>
+        <nav>
+            <ul class="nav-buttons">
+                <li><a href="aboutus.html" class="btn">About</a></li>
+                <li><a href="article.html" class="btn">Articles</a></li>
+                <li><a href="contact.html" class="btn">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- Mobile Menu Box -->
+    <div id="mobileMenu" class="mobile-menu">
+        <ul>
+            <li><a href="#">Workouts</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Challenges</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Community</a></li>
+        </ul>
+    </div>
+
+    <div class="grid">
+        <!-- Image Container First -->
+        <a href="your-link-here.html" class="box image-box">
+            <img src="your-image-url.jpg" alt="Fitness Image">
+        </a>
+
+        <!-- Exercise of the Day Container -->
+        <a href="exercise-of-the-day.html" class="box exercise-box">
+            <p>Exercise of the Day</p>
+            <h2>30 seconds<br>High Knees</h2>
+        </a>
+
+        <!-- Body Patch Container -->
+        <a href="body-patch.html" class="box body-patch">
+            <h1>BODY PATCH</h1>
+            <p>Workout of the Day</p>
+        </a>
+
+        <!-- Challenge Container -->
+        <a href="october-challenge.html" class="box challenge">
+            <p>October Challenge</p>
+            <h2>1,000 Calf Raises</h2>
+        </a>
+
+        <!-- Cardio Container -->
+        <a href="30-days-of-cardio.html" class="box cardio">
+            <h2>30 Days of Cardio</h2>
+        </a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

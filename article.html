@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Flow Blog</title>
+    <link rel="stylesheet" href="article.css">
+</head>
+<body>
+
+    <!-- Loader Section -->
+    <div id="loader">
+        <div class="loader-animation">
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Fitness Flow</h1>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="mobile-menu">Menu</button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Workouts</a></li>
+                    <li><a href="#">Nutrition</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2>Fitness Blog</h2>
+        <p>Stay fit, stay strong. Your guide to fitness and health.</p>
+    </section>
+
+    <section class="blog-intro">
+        <h3>Welcome to Our Fitness Blog</h3>
+        <p>Get expert advice, fitness tips, and inspiration to help you achieve your health and fitness goals.</p>
+    </section>
+
+    <section class="blog-cards">
+        <a href="article1.html" class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Workout Tips">
+            <h3>Top 10 Home Workouts</h3>
+            <p>Discover effective exercises you can do at home to stay fit.</p>
+        </a>
+
+        <a href="article2.html" class="card">
+            <img src="https://via.placeholder.com/300x200" alt="HIIT Training">
+            <h3>Boost Strength with HIIT</h3>
+            <p>High-intensity interval training to improve strength.</p>
+        </a>
+
+        <a href="article3.html" class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Nutrition for Athletes">
+            <h3>Best Nutrition Tips for Athletes</h3>
+            <p>Optimize your diet to fuel your performance.</p>
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2024 Fitness Flow | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Hide the loader after 1 second
+        setTimeout(function() {
+            document.getElementById('loader').style.display = 'none';
+        }, 1000);
+    </script>
+</body>
+</html>

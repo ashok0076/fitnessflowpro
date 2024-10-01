@@ -1,0 +1,69 @@
+/* This will center the table horizontally and vertically */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%; /* Adjust the width as needed */
+  transform: translateY(-100px);
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+.pro {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-family: sans-serif;
+  transform: translateY(50px);
+}
+
+.buttonhome {
+  display: inline-flex; /* Ensure the button behaves as a flex container */
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100px);
+  margin-top: 80px;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: #ff4b5c;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer; /* Ensure cursor changes to pointer */
+}
+
+.buttonhome a {
+  color: white; /* Button text color */
+  text-decoration: none; /* Remove underline from the link */
+  display: block; /* Make the link fill the button area */
+  width: 100%;
+  height: 100%;
+  text-align: center; /* Center text inside the link */
+  line-height: 1.5; /* Adjust line-height for vertical centering */
+}
+
+.buttonhome:hover {
+  background-color: white; /* Change background color on hover */
+  border-color: #ff4b5c; /* Border color change on hover */
+}
+
+.buttonhome:hover a {
+  color: red; /* Change text color to red on hover */
+}
+q
