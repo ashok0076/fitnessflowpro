@@ -61,6 +61,39 @@ body {
     margin-top: 20px;
 }
 
+/* Combined Container */
+.combined-container {
+    display: flex; /* Use flexbox to align items */
+    grid-column: span 2; /* Span two columns in grid for larger space */
+    margin-bottom: 20px; /* Add some space below */
+}
+
+/* Image Box Styling */
+.image-box {
+    width: 300px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height for a square */
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+}
+
+/* Adjust the image to fill the container */
+.image-box img {
+    width: 100%; /* Fill width */
+    height: 100%; /* Fill height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Text Container */
+.text-container {
+    padding: 20px; /* Add some padding */
+    background-color: white; /* Background for the text container */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #ddd; /* Border for distinction */
+    margin-left: 20px; /* Space between image and text */
+    flex-grow: 1; /* Allow the text container to grow */
+}
+
 .box {
     background-color: white;
     padding: 40px;
@@ -96,19 +129,25 @@ body {
 }
 
 .image-box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+    width: 100%; /* Fill the width of the box */
+    height: 100%; /* Fill the height of the box */
+    object-fit: cover; /* Cover the box while maintaining aspect ratio */
+    border-radius: 20px;
 }
 
 /* Make Image Box Larger */
 .image-box {
     grid-column: span 2;
+    padding: 0px;
+    border-radius: 20px;
+    
+
 }
 
 .box h2,
 .box p {
     margin-bottom: 10px;
+    
 }
 
 /* Mobile Menu */
