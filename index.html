@@ -1,63 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Flow</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="index.css">
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('menu');
-            if (menu.style.display === 'flex') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'flex';
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Flow</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            FITNESS FLOW
-        </div>
-        <nav>
-            <a href="aboutus.html">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="aboutus.html">ARTICLES</a>
-        </nav>
-        <button class="menu-button" onclick="toggleMenu()">
-            MENU
-        </button>
-        <div class="menu" id="menu">
-            <a href="aboutus.html">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="article.html">ARTICLES</a>
-        </div>
+  <div class="loader" id="loader">
+    <div class="loader-bar">
+      <div></div>
     </div>
-    <div class="content">
-        <a class="box large" href="#">
-            <img alt="Illustration of a person doing high knees exercise" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-D1G6wrFyeJMmYXlHpggrFGCZ.png?st=2024-10-01T17%3A40%3A08Z&se=2024-10-01T19%3A40%3A08Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-10-01T18%3A03%3A12Z&ske=2024-10-02T18%3A03%3A12Z&sks=b&skv=2024-08-04&sig=OkDyLhjwebT6FhaL0EiXxdlYUzZnC9XyEr1hzQ5H0ns%3D" width="200"/>
-        </a>
-        <a class="box small" href="#">
-            <h2>MY NAME IS ASHOK</h2>
-            <p>MY NAME IS ASHOK</p>
-        </a>
-        <a class="box" href="#">
-            <h2>MY NAME IS ASHOK</h2>
-            <p class="highlight">007</p>
-            <p>MY NAME IS ASHOK</p>
-        </a>
-        <a class="box" href="#">
-            <img alt="Illustration of a person doing a single exercise with dumbbells" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-fEGGFBRK9OENQZWlqq4TJUXm.png?st=2024-10-01T17%3A37%3A50Z&se=2024-10-01T19%3A37%3A50Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-10-01T15%3A41%3A39Z&ske=2024-10-02T15%3A41%3A39Z&sks=b&skv=2024-08-04&sig=QoGZ6hfJ5Wt/HzZXNxC5qhl7HH4YFthHWORdVvoLs9Y%3D" width="200"/>
-            <h2>MY NAME IS ASHOK</h2>
-            <p>MY NAME IS ASHOK</p>
-        </a>
-        <a class="box" href="#">
-            <h2>MY NAME IS ASHOK</h2>
-            <p class="highlight">007</p>
-        </a>
+    <div class="loader-text">Developed By Ashok</div>
+  </div>
+  <div class="header" id="header">
+    <h1 onclick="location.reload()">FITNESS FLOW</h1>
+    <div class="nav">
+      <a href="aboutus.html">ABOUT</a>
+      <a href="article.html">ARTICLES</a>
+      <a href="contact.html">CONTACT</a>
     </div>
+    <div class="menu-button" onclick="toggleMenu()">MENU</div>
+  </div>
+  <div class="content" id="content">
+    <a class="explore-button" href="#">EXPLORE</a>
+  </div>
+  <div class="footer">&copy; 2023 Fitness Flow. All rights reserved.</div>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.nav');
+      if (nav.style.display === 'flex') {
+        nav.style.display = 'none';
+      } else {
+        nav.style.display = 'flex';
+      }
+    }
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      const header = document.getElementById('header');
+      const content = document.getElementById('content');
+      setTimeout(() => {
+        loader.style.display = 'none';
+        header.style.opacity = '1';
+        header.style.transform = 'translateY(0)';
+        content.style.opacity = '1';
+        content.style.transform = 'translateY(0)';
+      }, 800);
+    });
+  </script>
 </body>
 </html>
